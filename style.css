@@ -1,0 +1,761 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Start Header Section styles */
+
+#header {
+  background-image: url(hero\ img.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  background-color: rgb(12, 12, 12);
+  left: 0;
+  right: 0;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.7;
+}
+@keyframes changeText {
+  0% {
+    content: "Professional web developer|";
+  }
+  2.5% {
+    content: "Professional web developer|";
+  }
+  5% {
+    content: "Professional web developer|";
+  }
+  7.5% {
+    content: "Professional web develope|";
+  }
+  10% {
+    content: "Professional web develop|";
+  }
+  12.5% {
+    content: "Professional web develo|";
+  }
+  15% {
+    content: "Professional web devel|";
+  }
+  17.5% {
+    content: "Professional web deve|";
+  }
+  20% {
+    content: "Professional web dev|";
+  }
+  22.5% {
+    content: "Professional web de|";
+  }
+  25% {
+    content: "Professional web d|";
+  }
+  27.5% {
+    content: "Professional web |";
+  }
+  30% {
+    content: "Professional web d|";
+  }
+  32.5% {
+    content: "Professional web de|";
+  }
+  35% {
+    content: "Professional web des|";
+  }
+  37.5% {
+    content: "Professional web desi|";
+  }
+  40% {
+    content: "Professional web desig|";
+  }
+  42.5% {
+    content: "Professional web design|";
+  }
+  45% {
+    content: "Professional web designe|";
+  }
+  47.5% {
+    content: "Professional web designer|";
+  }
+  50% {
+    content: "Professional web designer|";
+  }
+  52.5% {
+    content: "Professional web designer|";
+  }
+  55% {
+    content: "Professional web designer|";
+  }
+  57.5% {
+    content: "Professional web designe|";
+  }
+  60% {
+    content: "Professional web design|";
+  }
+  62.5% {
+    content: "Professional web desig|";
+  }
+  65% {
+    content: "Professional web desi|";
+  }
+  67.5% {
+    content: "Professional web des|";
+  }
+  70% {
+    content: "Professional web de|";
+  }
+  72.5% {
+    content: "Professional web d|";
+  }
+  75% {
+    content: "Professional web |";
+  }
+  77.5% {
+    content: "Professional web |";
+  }
+  80% {
+    content: "Professional web d|";
+  }
+  82.5% {
+    content: "Professional web de|";
+  }
+  85% {
+    content: "Professional web dev|";
+  }
+  87.5% {
+    content: "Professional web deve|";
+  }
+  90% {
+    content: "Professional web devel|";
+  }
+  92.5% {
+    content: "Professional web develo|";
+  }
+  95% {
+    content: "Professional web develop|";
+  }
+  97.5% {
+    content: "Professional web develope|";
+  }
+  100% {
+    content: "Professional web developer|";
+  }
+}
+
+.animated-text {
+  color: #ffffff;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.animated-text::before {
+  content: "Professional Web Designer";
+  animation: changeText 3s infinite;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home {
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  color: red;
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 18px 0;
+  z-index: 5;
+  position: relative;
+}
+
+nav {
+  box-sizing: border-box;
+  height: 52px;
+  vertical-align: middle;
+  z-index: 5;
+  position: relative;
+}
+
+nav .links li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .links li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 17px;
+}
+
+nav .links {
+  margin: 0px;
+  padding-top: 15px;
+  list-style: none;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.center-text h1 {
+  color: red;
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.center-text h3 {
+  color: white;
+  font-size: 24px;
+}
+
+/* End Header Section */
+
+/* Start about Section styles */
+
+.about {
+  padding: 120px 0;
+}
+
+.about .left-img,
+.about .right-text {
+  width: 47%;
+}
+
+.about .left-img {
+  text-align: right;
+}
+
+.about .left-img .square {
+  background-color: #fff;
+  width: 360px;
+  height: 420px;
+  border: 8px solid #555555;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.about .left-img .square .img-container {
+  width: 100%;
+  height: 440px;
+  border-radius: 5px;
+  position: relative;
+  left: 15px;
+  top: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about .left-img .square img {
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.about .left-img .square .img-container .img-overlay {
+  background-color: #000;
+  position: relative;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  bottom: -100%;
+  transition: bottom 0.5s ease, opacity 0.5s ease;
+  opacity: 0.3;
+}
+
+.about .left-img .square .img-container:hover .img-overlay {
+  bottom: 0;
+}
+
+.about .left-img .square .img-container:hover .img-overlay {
+  opacity: 0.6;
+}
+
+.about .left-img .square .img-container .img-overlay .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.about .left-img .square .img-container .img-overlay .icons span {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.about .right-text h2 {
+  color: #555555;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 34;
+}
+
+.about .right-text h2 span {
+  color: red;
+}
+
+.about .right-text > p {
+  padding: 15px 25px 19px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+  border-bottom: 1px dashed #555555;
+}
+
+.about .right-text .information table {
+  width: 100%;
+}
+
+.about .right-text .information p {
+  margin-top: 20px;
+  color: #555555;
+  font-size: 16px;
+}
+
+.about .right-text .buttons {
+  margin-top: 30px;
+}
+
+.main-btn {
+  background-color: #ff305b;
+  font-size: 18px;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+  text-transform: capitalize;
+  /* For the hand icon for the mouse */
+}
+
+.main-btn:hover {
+  background-color: #ec2403;
+}
+
+/* End about Section styles */
+
+/* Start Our services Section styles */
+
+.our-services {
+  padding: 120px 0;
+  background-color: #f1f1f1;
+}
+
+.our-services h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.three-lines {
+  margin-bottom: 40px;
+}
+
+.three-lines span:first-child {
+  margin: 4px auto;
+  display: block;
+  width: 70px;
+  background-color: #ff305b;
+  height: 1px;
+}
+
+.three-lines span:nth-child(2) {
+  margin: 4px auto;
+  display: block;
+  width: 160px;
+  background-color: #ff305b;
+  height: 1px;
+}
+
+.three-lines span:nth-child(3) {
+  margin: 4px auto;
+  display: block;
+  width: 70px;
+  background-color: #ff305b;
+  height: 1px;
+}
+
+.our-services .square-item {
+  float: left;
+  width: 25%;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  padding: 25px 16px;
+  box-sizing: border-box;
+}
+
+.our-services .square-item i {
+  font-size: 30px;
+  color: #ff305b;
+}
+
+.our-services .square-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0;
+  color: #333;
+}
+
+.our-services .square-item p {
+  color: #555555;
+  padding: 5px 20px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.our-services .square-item:hover {
+  background: #ffffff;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+/* End Our services Section styles */
+
+/* Start Our Portfolio Section styles */
+.our-portfolio {
+  padding: 120px 0;
+}
+
+.our-portfolio h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.our-portfolio .nav {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.our-portfolio .nav li {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.our-portfolio .nav li:first-child {
+  color: #ff305b;
+}
+
+.our-portfolio .square-item {
+  float: left;
+  width: 33.3%;
+  transition: box-shadow 0.3s ease;
+  padding: 16px 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.our-portfolio .square-item img {
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.our-portfolio .square-item .img-overlay {
+  background-color: #000;
+  width: 100%;
+  height: 285px;
+}
+
+.our-portfolio .square-item img:hover {
+  opacity: 0.7;
+}
+
+/* End Our Portfolio Section styles */
+
+.our-counts {
+  padding: 120px 0;
+  background-color: #f1f1f1;
+}
+
+.our-counts .count-item {
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+
+.our-counts .count-item i {
+  font-size: 30px;
+  color: #ff305b;
+}
+
+.our-counts .count-item h3 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.our-counts .count-item h5 {
+  font-size: 16px;
+  color: #555555;
+}
+
+/* Start Our client-feedback Section styles */
+.client-feedback {
+  padding: 120px 0;
+}
+
+.client-feedback h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.client-feedback .feedback-item {
+  width: 52%;
+  height: 180px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f1f1f1;
+  position: relative;
+  overflow: hidden;
+}
+
+.client-feedback .feedback-item .triangle {
+  width: 0;
+  height: 0;
+  border-top: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 180px solid #ff305b;
+  position: absolute;
+  left: 90px;
+  top: -90px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.client-feedback .feedback-item .feedback-img {
+  float: left;
+  position: relative;
+  z-index: 200;
+}
+
+.client-feedback .feedback-item .feedback-img img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.client-feedback .feedback-item .feedback-text {
+  float: right;
+  width: 80%;
+}
+
+.client-feedback .feedback-item .feedback-text h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.client-feedback .feedback-item .feedback-text h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.client-feedback .feedback-item .feedback-text p {
+  padding-right: 25px;
+  line-height: 30px;
+}
+
+.client-feedback .feedback-item .feedback-text .stars {
+  color: #f1c30d;
+}
+
+/* End Our feedback Section styles */
+
+/* Start Our blog Section styles */
+.our-blog {
+  padding: 120px 0;
+  background-color: #f1f1f1;
+}
+
+.our-blog h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.our-blog .blog-item {
+  float: left;
+  width: 29%;
+  background-color: #fff;
+  margin: 0 20px;
+  /* height: 300px; */
+}
+
+.our-blog .blog-item img {
+  width: 100%;
+}
+
+.our-blog .blog-item iframe {
+  width: 100%;
+  height: 208px;
+}
+
+.our-blog .blog-item .blog-text {
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  line-height: 24px;
+}
+
+.our-blog .blog-item .blog-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+
+.our-blog .blog-item .blog-text h5 {
+  font-size: 14px;
+  color: #333333;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+/* End Our blog Section styles */
+
+/* Start contact-us Section styles */
+
+.contact-us {
+  padding: 120px 0;
+}
+
+.contact-us h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact-us form .half-width {
+  width: 49%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.contact-us form div .half-width:first-child {
+  float: left;
+}
+
+.contact-us form div .half-width:nth-child(2) {
+  float: right;
+}
+
+.contact-us form .full-width {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-us form .button {
+  text-align: left;
+}
+
+.contact-us form .button button {
+  text-align: left;
+}
+
+/* End contact-us Section styles */
+
+/* Start Footer styles */
+
+footer {
+  padding: 60px 0;
+  background-color: #333333;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer .container .icons {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+footer .container .icons span {
+  margin: 10px;
+  font-size: 18px;
+}
+
+footer .container .copy-right {
+  color: #fff;
+}
+
+footer .container .copy-right span {
+  color: #ff305b;
+}
+
+/* End Footer styles */
